@@ -11,6 +11,9 @@ function limparCep (valor){
 
 // Montando a função que chama a API e retorna os dados do CEP
 async function buscarCep(){
+
+    document.querySelector('#complemento').value = '';
+    document.querySelector('#numero').value = '';
     const cep = limparCep(cepInput.value);
 
     // verificando se o cep tem 08 dígitos

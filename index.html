@@ -6,30 +6,34 @@
     <title>Cadastro de endereços</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body class="font-quicksand bg-gray-100">
+<body class="font-quicksand bg-gray-100 dark:bg-gray-900">
 
-    <section class="w-full max-w-5xl bg-white p-8 mx-auto my-5 min-h-screen rounded-lg">
-        <h2 class="text-2xl font-bold text-gray-600 mb-5">Buscar Endereço</h2>
+    <section class="w-full max-w-5xl bg-white dark:bg-gray-800 p-8 mx-auto my-5 min-h-screen rounded-lg">
+
+        <div class="flex w-full justify-between items-center my-4">
+            <h2 class="text-2xl font-bold text-gray-600 dark:text-gray-200 mb-5">Buscar Endereço</h2>
+            <button class="p-2 rounded-md bg-blue-700 text-white font-medium cursor-pointer hover:bg-blue-500" id="btnTheme">Dark/Light</button>
+        </div>
 
         <form id="enderecoForm" action="" class="border p-4 border-gray-300 rounded-lg">
 
             <!-- Nome -->
             <div>
-            <label for="" class="block text-gray-600 mb-1">Nome</label>
+            <label for="" class="block text-gray-600 dark:text-gray-100 mb-1">Nome</label>
             <input type="text" id="nome" name="nome" 
             placeholder="Digite Seu Nome" class="w-full
             border-gray-300 border px-3 py-2 rounded
-            focus:outline-none focus:ring-1 focus:ring-blue-400"> 
+            focus:outline-none focus:ring-1 focus:ring-blue-400 dark:text-gray-100 placeholder:text-gray-400"> 
             </div>
 
             <!-- Campo para a digitação do CEP -->
              <div class="flex gap-2 mt-5">
                 <div class="flex-1">
-                    <label for="cep" class="text-gray-600 mb-1">CEP</label>
+                    <label for="cep" class="text-gray-600 dark:text-gray-100 mb-1">CEP</label>
                     <input type="text" id="cep" name="cep" 
             placeholder="00000-000" maxlength="9" class="w-full
             border-gray-300 border px-3 py-2 rounded
-            focus:outline-none focus:ring-1 focus:ring-blue-400"> 
+            focus:outline-none focus:ring-1 focus:ring-blue-400 dark:text-gray-100 placeholder:text-gray-400"> 
 
                 </div> 
                 <div class="flex items-end">
@@ -45,56 +49,56 @@
 
                 <!-- Logradouro -->
                  <div class="mb-5">
-                <label for="Logradouro" class="block text-gray-600 mb-1">Logradouro</label>
+                <label for="Logradouro" class="block text-gray-600 dark:text-gray-100 mb-1">Logradouro</label>
                 <input type="text" id="logradouro" name="Logradouro" 
                 placeholder="Rua, Avenida, etc" class="w-full
                 border-gray-300 border px-3 py-2 rounded
-                focus:outline-none focus:ring-1 focus:ring-blue-400">
+                focus:outline-none focus:ring-1 focus:ring-blue-400 dark:text-gray-100 placeholder:text-gray-400">
                 </div>
 
                 <!-- Número -->
                  <div class="mb-5">
-                <label for="numero" class="block text-gray-600 mb-1">Número</label>
+                <label for="numero" class="block text-gray-600 dark:text-gray-100 mb-1">Número</label>
                 <input type="text" id="numero" name="Numero" 
                 placeholder="Numero" class="w-full
                 border-gray-300 border px-3 py-2 rounded
-                focus:outline-none focus:ring-1 focus:ring-blue-400">
+                focus:outline-none focus:ring-1 focus:ring-blue-400 dark:text-gray-100 placeholder:text-gray-400">
                 </div>
 
                 <!-- Complemento -->
                  <div class="mb-5">
-                <label for="Complemento" class="block text-gray-600 mb-1">Complemento</label>
+                <label for="Complemento" class="block text-gray-600 dark:text-gray-100 mb-1">Complemento</label>
                 <input type="text" id="complemento" name="Complemento" 
                 placeholder="Apartamento, Bloco, etc..." class="w-full
                 border-gray-300 border px-3 py-2 rounded
-                focus:outline-none focus:ring-1 focus:ring-blue-400">
+                focus:outline-none focus:ring-1 focus:ring-blue-400 dark:text-gray-100 placeholder:text-gray-400">
                 </div>
 
                 <!-- Bairro -->
                  <div class="mb-5">
-                <label for="Bairro" class="block text-gray-600 mb-1">Bairro</label>
+                <label for="Bairro" class="block text-gray-600 dark:text-gray-100 mb-1">Bairro</label>
                 <input type="text" id="bairro" name="Bairro" 
                 placeholder="Bairro" class="w-full
                 border-gray-300 border px-3 py-2 rounded
-                focus:outline-none focus:ring-1 focus:ring-blue-400">
+                focus:outline-none focus:ring-1 focus:ring-blue-400 dark:text-gray-100 placeholder:text-gray-400">
                 </div>
 
                 <!-- Cidade -->
                  <div class="mb-5">
-                <label for="Cidade" class="block text-gray-600 mb-1">Cidade</label>
+                <label for="Cidade" class="block text-gray-600 dark:text-gray-100 mb-1">Cidade</label>
                 <input type="text" id="cidade" name="Cidade" 
                 placeholder="Cidade" class="w-full
                 border-gray-300 border px-3 py-2 rounded
-                focus:outline-none focus:ring-1 focus:ring-blue-400">
+                focus:outline-none focus:ring-1 focus:ring-blue-400 dark:text-gray-100 placeholder:text-gray-400">
                 </div>
 
                 <!-- Estado -->
                  <div class="mb-5">
-                <label for="Estado" class="block text-gray-600 mb-1">Estado</label>
+                <label for="Estado" class="block text-gray-600 dark:text-gray-100 mb-1">Estado</label>
                 <input type="text" id="estado" name="Estado" 
                 placeholder="Estado" class="w-full
                 border-gray-300 border px-3 py-2 rounded
-                focus:outline-none focus:ring-1 focus:ring-blue-400">
+                focus:outline-none focus:ring-1 focus:ring-blue-400 dark:text-gray-100 placeholder:text-gray-400">
                 </div>
             </div>
 
@@ -105,6 +109,7 @@
 
     </section>
     
+    <script src="./assets/js/theme.js"></script>
     <script src="./assets/js/cep.js"></script>
 </body>
 </html>

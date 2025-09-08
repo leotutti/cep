@@ -4,3 +4,5 @@
 @theme{
     --font-quicksand:"Quicksand", sans-serif;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
