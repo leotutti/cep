@@ -5,7 +5,7 @@ const form = document.querySelector("#enderecoForm");
 
 // Montando a função que chama a API e retorna os dados do CEP
 async function buscarCep(){
-    const cep = cepInput.value;
+    const cep = cepInput.value.replace(/\D/g, '');
 
     // verificando se o cep tem 08 dígitos
     if(cep.length === 8){
