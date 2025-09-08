@@ -3,9 +3,15 @@ const cepInput = document.querySelector("#cep");
 const buscarCepBtn = document.querySelector("#buscarCep");
 const form = document.querySelector("#enderecoForm");
 
+// Função para impedir letras no CEP
+
+function limparCep (valor){
+    return valor.replace(/\D/g, '');
+}
+
 // Montando a função que chama a API e retorna os dados do CEP
 async function buscarCep(){
-    const cep = cepInput.value.replace(/\D/g, '');
+    const cep = limparCep(cepInput.value);
 
     // verificando se o cep tem 08 dígitos
     if(cep.length === 8){
@@ -41,7 +47,7 @@ buscarCepBtn.addEventListener('click', buscarCep);
 // máscara automática e permissão de apenas números
 
 cepInput.addEventListener('input', (e) => {
-  let valorDigitado = e.target.value.replace(/\D/g, '');
+  let valorDigitado = limparCep(e.target.value);
   if (valorDigitado.length > 5){
     valorDigitado = valorDigitado.slice(0, 5) + '-' + valorDigitado.slice(5, 8)
   }
